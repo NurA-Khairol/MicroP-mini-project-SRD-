@@ -75,7 +75,7 @@ void loop() { //code that will run continously
   
    delay(500); // set delay of 500 microsecond before refreshing
 
-  if((LEFTDisplay >= 10) & (LEFTDisplay <= 70)) 
+  if((LEFTDisplay >= 10) & (LEFTDisplay <= 50)) 
   {
   digitalWrite(buzzer, HIGH); // turn on buzzer
   digitalWrite(ledPin1, HIGH); // turn on led no.1
@@ -85,7 +85,7 @@ void loop() { //code that will run continously
   delay(10*(distance-5));
   }
 
-  if((BACKDisplay >= 10) & (BACKDisplay <= 70)) 
+  if((BACKDisplay >= 10) & (BACKDisplay <= 50)) 
   {
   digitalWrite(buzzer, HIGH);
   digitalWrite(ledPin2, HIGH);
@@ -95,7 +95,7 @@ void loop() { //code that will run continously
   delay(10*(distance-5));
   }
 
-  if((RIGHTDisplay >= 10) & (RIGHTDisplay <= 70)) 
+  if((RIGHTDisplay >= 10) & (RIGHTDisplay <= 50)) 
   {
   digitalWrite(buzzer, HIGH);
   digitalWrite(ledPin3, HIGH);
